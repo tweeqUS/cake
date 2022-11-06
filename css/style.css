@@ -11,6 +11,10 @@
     --padding-block: padding: 3em 2em 0.5em 5em;
 }
 
+body {
+    width: 1880px;
+}
+
 body , html, h1, h2, h3, h4, h5, h6 , p {
 	padding: 0;
 	margin: 0;

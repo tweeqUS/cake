@@ -142,117 +142,117 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardTextHidenActive = document.querySelectorAll('.card-text-hidden');
     const cardButtonActive = document.querySelectorAll('.card-button');
     
-    // function cardHidden () {
+    function cardHidden () {
             
-    //         cards.classList.remove('card-active');
-    //         cardImgBlockActive.classList.remove('card-img-block-active');
-    //         cardImgActive.classList.remove('card-img-active');
-    //         textBlockActive.classList.remove('text-block-active');
-    //         cardTextOneActive.classList.remove('text-one-active');
-    //         cardTextDescrActive.classList.remove('text-descr-active');
-    //         cardTextTwoActive.classList.remove('text-two-active');
-    //         cardTextHidenActive.classList.remove('card-text-hidden-active');
-    //         cardButtonActive.classList.remove('card-button-active');
+            cards.classList.remove('card-active');
+            cardImgBlockActive.classList.remove('card-img-block-active');
+            cardImgActive.classList.remove('card-img-active');
+            textBlockActive.classList.remove('text-block-active');
+            cardTextOneActive.classList.remove('text-one-active');
+            cardTextDescrActive.classList.remove('text-descr-active');
+            cardTextTwoActive.classList.remove('text-two-active');
+            cardTextHidenActive.classList.remove('card-text-hidden-active');
+            cardButtonActive.classList.remove('card-button-active');
               
-    // }
+    }
 
-//     function cardActive (i) {
-//         cards[i].classList.toggle('card-active');
-//         cardImgBlockActive[i].classList.toggle('card-img-block-active');
-//         cardImgActive[i].classList.toggle('card-img-active');
-//         textBlockActive[i].classList.toggle('text-block-active');
-//         cardTextOneActive[i].classList.toggle('text-one-active');
-//         cardTextDescrActive[i].classList.toggle('text-descr-active');
-//         cardTextTwoActive[i].classList.toggle('text-two-active');
-//         cardTextHidenActive[i].classList.toggle('card-text-hidden-active');
-//         cardButtonActive[i].classList.toggle('card-button-active');
-
-//     }
-
-//     cardActive(i = 0);
-
-
-
-//    cards.forEach((card, i) => {
-//         card.addEventListener('click', (event) => {
-//             const target = event.target;
-//             if (target && target.classList.contains('card-img')) {
-//                 cardActive(i); 
-//                 // cardHidden();
-//             }      
-            
-            
-//         });     
-//    });
-  
-    
-
-    function cardHide () {
-        cards.forEach((item) => {
-            item.classList.add('card-hide');
-            item.classList.remove('card-active');
-        });
-
-        cardImgBlockActive.forEach((item) => {
-            item.classList.add('card-img-block-hide');
-            item.classList.remove('card-img-block-active');
-        })
-
-        cardImgActive.forEach((item) => {
-            item.classList.add('card-img-hide');
-            item.classList.remove('card-img-active');
-        });
-
-        cardTextOneActive.forEach((item) => {
-            item.classList.add('card-text-one-hide');
-            item.classList.remove('text-one-active');
-        });
-        
-        
+    function cardActive (i) {
+        cards[i].classList.toggle('card-active');
+        cardImgBlockActive[i].classList.toggle('card-img-block-active');
+        cardImgActive[i].classList.toggle('card-img-active');
+        textBlockActive[i].classList.toggle('text-block-active');
+        cardTextOneActive[i].classList.toggle('text-one-active');
+        cardTextDescrActive[i].classList.toggle('text-descr-active');
+        cardTextTwoActive[i].classList.toggle('text-two-active');
+        cardTextHidenActive[i].classList.toggle('card-text-hidden-active');
+        cardButtonActive[i].classList.toggle('card-button-active');
 
     }
 
-//  cardHide();
+    cardActive(i = 0);
 
 
-    function cardActive (i) {
-            cards[i].classList.remove('card-hide');
-            cards[i].classList.add('card-active');
 
-            cardImgBlockActive[i].remove('card-img-block_hide');
-            cardImgBlockActive[i].add('card-img-block-active');
-
-            cardImgActive[i].classList.remove('card-img-hide');
-            cardImgActive[i].classList.add('card-img-active');
-
-
-            cardTextOneActive[i].classList.remove('card-text-one-hide');
-            cardTextOneActive[i].classList.add('text-one-active');
+   cards.forEach((card, i) => {
+        card.addEventListener('click', (event) => {
+            const target = event.target;
+            if (target && target.classList.contains('card-img')) {
+                // cardHidden();
+                cardActive(i); 
+            }      
             
-            // cardImgBlockActive[i].classList.add('card-img-block-active');
-            // cardImgActive[i].classList.add('card-img-active');
-            // textBlockActive[i].classList.add('text-block-active');
-            // cardTextOneActive[i].classList.add('text-one-active');
-            // cardTextDescrActive[i].classList.add('text-descr-active');
-            // cardTextTwoActive[i].classList.add('text-two-active');
-            // cardTextHidenActive[i].classList.add('card-text-hidden-active');
-            // cardButtonActive[i].classList.add('card-button-active');
-        }
+            
+        });     
+   });
+  
     
-        // cardActive(i = 0);
 
-        cardHide();
+//     function cardHide () {
+//         cards.forEach((item) => {
+//             item.classList.add('card-hide');
+//             item.classList.remove('card-active');
+//         });
+
+//         cardImgBlockActive.forEach((item) => {
+//             item.classList.add('card-img-block-hide');
+//             item.classList.remove('card-img-block-active');
+//         })
+
+//         cardImgActive.forEach((item) => {
+//             item.classList.add('card-img-hide');
+//             item.classList.remove('card-img-active');
+//         });
+
+//         cardTextOneActive.forEach((item) => {
+//             item.classList.add('card-text-one-hide');
+//             item.classList.remove('text-one-active');
+//         });
+        
+        
+
+//     }
+
+// //  cardHide();
 
 
-        cards.forEach((card, i) => {
-          card.addEventListener('click', (event) => {
-          const target = event.target;
-          if (target && target.classList.contains('card-img')) {
-              cardHide();
-              cardActive(i); 
-          }      
-          });     
-        });
+//     function cardActive (i) {
+//             cards[i].classList.remove('card-hide');
+//             cards[i].classList.add('card-active');
+
+//             cardImgBlockActive[i].remove('card-img-block_hide');
+//             cardImgBlockActive[i].add('card-img-block-active');
+
+//             cardImgActive[i].classList.remove('card-img-hide');
+//             cardImgActive[i].classList.add('card-img-active');
+
+
+//             cardTextOneActive[i].classList.remove('card-text-one-hide');
+//             cardTextOneActive[i].classList.add('text-one-active');
+            
+//             // cardImgBlockActive[i].classList.add('card-img-block-active');
+//             // cardImgActive[i].classList.add('card-img-active');
+//             // textBlockActive[i].classList.add('text-block-active');
+//             // cardTextOneActive[i].classList.add('text-one-active');
+//             // cardTextDescrActive[i].classList.add('text-descr-active');
+//             // cardTextTwoActive[i].classList.add('text-two-active');
+//             // cardTextHidenActive[i].classList.add('card-text-hidden-active');
+//             // cardButtonActive[i].classList.add('card-button-active');
+//         }
+    
+//         // cardActive(i = 0);
+
+//         cardHide();
+
+
+//         cards.forEach((card, i) => {
+//           card.addEventListener('click', (event) => {
+//           const target = event.target;
+//           if (target && target.classList.contains('card-img')) {
+//               cardHide();
+//               cardActive(i); 
+//           }      
+//           });     
+//         });
 
 
 
