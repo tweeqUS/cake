@@ -384,7 +384,7 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
 
     /* cards start */
 .cards-block {
-    background-color: rgba(231, 212, 190);
+    background-color: rgb(244 236 226);
     padding: 0em 8em 0.5em 8em;
     padding-top: 2em;
     padding-bottom: 3em;
@@ -696,43 +696,52 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
+    
  }   
  
 .modal-dialog {
-    max-width: 310px;
+    max-width: 940px;
     margin: 50px auto;
 }
 
 .modal-content {
-    width: 360px;
-    height: 500px;
+    width: 960px;
+    height: 544px;
     border: 1px solid rgb(194, 194, 194);
     border-radius: 0.4em;
-    background: rgb(245, 245, 245);
+    /* background: rgb(245, 245, 245); */
+    background-image: url(/img/modal_img.jpg);
     
 
 
 }
 
 .close-modal {
-    margin: 0 0 0 310px;
+    margin: 0 0 0 910px;
     cursor: pointer;
 }
 
-.top-modal {
+/* .top-modal {
     display: flex;
     justify-content: center;
-}
+} */
 
 .modal-top-img {
     width: 170px;
 
 }
 
+.modal-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3em;
+}
+
 .modal-text {
-    text-align: center;
-    font-size: 35px;
+    /* text-align: center; */
+    font-size: 40px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
@@ -778,6 +787,41 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
 }
 
 
+.modal_input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal_input input{
+    width: 20em;
+    height: 2.5em;
+    margin-top: 0.5em;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 1px solid black;
+
+
+}
+
+.modal_input textarea {
+    margin-top: 0.5em;
+    width: 20em;
+    height: 5em;
+    resize: none;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal_input button {
+    margin-top: 0.5em;
+    width: 10em;
+    height: 2em;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    cursor: pointer;
+}
 
     /* modal */
 
